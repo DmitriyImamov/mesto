@@ -1,0 +1,10 @@
+.edit-button {
+  width: 24px;
+  height: 24px;
+  background: transparent url(../../images/edit-button/EditButton.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
