@@ -19,16 +19,18 @@
         <div class="profile__content">
           <img class="profile__avatar" src="./images/profile/image.jpg" alt="аватар">
           <div class="profile__info">
+            <button class="edit-button" type="submit">
+            </button>
             <h1 class="profile__info-title">
               Жак-Ив Кусто
             </h1>
-            <button class="edit-button" type="submit"></button>
             <p class="profile__info-curenet-text">
               Исследователь океана
             </p>
           </div>
         </div>
-        <button class="add-button" type="submit"></button>
+        <button class="add-button" type="submit">
+        </button>
       </section>
       <section class="elements">
 
@@ -38,5 +40,20 @@
 
     </footer>
   </div>
+  <div class="popup">
+    <form class="popup__container" action="/" method="post" >
+      <fieldset class="popup__form-title">
+        Редактировать профиль
+      </fieldset>
+      <input  class="popup__input-text popup__input-name" value="" placeholder="" type="text">
+      <input  class="popup__input-text popup__input-job" value="" type="text">
+      <button class="popup__save-button" type="submit">
+        Сохранить
+      </button>
+      <button class="popup__close-button" type="submit">
+      </button>
+    </form>
+  </div>
+  <script src="./scripts/index.js"></script>
 </body>
 </html>
