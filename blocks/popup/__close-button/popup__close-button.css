@@ -6,8 +6,18 @@
   left: 102%;
   background: transparent;
   background-image: url(../../../images/popup/Close-Icon.svg);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 560px) {
+  .popup__close-button {
+    width: 20px;
+    height: 20px;
+    top: -11%;
+    left: 93%;
+  }
 }

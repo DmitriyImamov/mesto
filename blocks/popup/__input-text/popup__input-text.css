@@ -14,3 +14,9 @@
 .popup__input-text:nth-child(3) {
   margin-top: 30px;
 }
+
+@media screen and (max-width: 560px) {
+  .popup__input-text:nth-child(2) {
+    margin-top: 75px;
+  }
+}

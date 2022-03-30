@@ -12,3 +12,12 @@
   border-radius: 2px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 560px) {
+  .popup__save-button{
+    max-width: 238px;
+    margin-top: 42px;
+    padding: 14px 82px;
+    font-size: 14px;
+  }
+}
