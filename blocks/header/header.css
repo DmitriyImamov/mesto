@@ -1,6 +1,14 @@
 .header {
   padding-top: 45px;
   padding-bottom: 37px;
+  position: relative;
 
   border-bottom: 1px solid #545454;
+}
+
+@media screen and (max-width: 372px) {
+  .header {
+    padding-top: 28px;
+    padding-bottom: 31px;
+  }
 }

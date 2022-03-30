@@ -1,9 +1,17 @@
 .profile {
+  margin: 0 auto;
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 919px) {
+  .profile {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
 }
 
 @media screen and (max-width: 699px) {
