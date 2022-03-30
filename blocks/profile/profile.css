@@ -5,3 +5,10 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 699px) {
+  .profile {
+    padding-top: 42px;
+    flex-direction: column;
+  }
+}
