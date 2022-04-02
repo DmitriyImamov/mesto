@@ -1,0 +1,6 @@
+.travel__image {
+  width: 100%;
+  max-width: 282px;
+  display: block;
+  grid-column: 1/-1;
+}

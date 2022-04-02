@@ -1,0 +1,18 @@
+.travel__like-button {
+  width: 22px;
+  height: 19px;
+  margin-right: 18px;
+  justify-self: end;
+  align-self: center;
+  background-image: url(../../../images/elements/like.svg);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  transition: opacity linear .3s;
+}
+
+.travel__like-button:hover {
+  opacity: .5;
+}

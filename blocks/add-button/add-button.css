@@ -1,23 +1,20 @@
 .add-button {
-  width: 100%;
-  max-width: 150px;
+  width: 150px;
   height: 50px;
   padding: 0;
-  background: transparent url(../../images/add-button/AddButton.svg);
-  background-size: cover;
+  background: transparent url(../../images/add-button/addButtun.svg);
   background-position: center;
+  background-size: 22px;
   background-repeat: no-repeat;
-  border: none;
+  border: 2px solid #fff;
+  border-radius: 2px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 372px) {
   .add-button {
-    width: 100%;
-    max-width: 282px;
-    background: transparent url(../../images/add-button/AddButtonBig.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 282px;
+    background-size: 16px;
   }
 }

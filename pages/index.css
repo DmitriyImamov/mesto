@@ -12,7 +12,12 @@
 @import url(../blocks/profile/__info/profile__info.css);
 @import url(../blocks/profile/__info-title/profile__info-title.css);
 @import url(../blocks/profile/__info-curenet-text/profile__info-curenet-text.css);
-
+@import url(../blocks/elements/elements.css);
+@import url(../blocks/travel/travel.css);
+@import url(../blocks/travel/__item/travel__item.css);
+@import url(../blocks/travel/__image/travel__image.css);
+@import url(../blocks/travel/__title/travel__title.css);
+@import url(../blocks/travel/__like-button/travel__like-button.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/popup/__container/popup__container.css);

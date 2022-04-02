@@ -1,0 +1,9 @@
+.travel__item {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 212px 70px;
+  grid-template-rows: 1fr 79px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
