@@ -10,5 +10,6 @@
   .profile__info-title {
     margin-left: 30px;
     font-size: 27px;
+    line-height: 1.2;
   }
 }
