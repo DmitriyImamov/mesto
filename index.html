@@ -19,7 +19,7 @@
         <div class="profile__content">
           <img class="profile__avatar" src="./images/profile/image.jpg" alt="аватар">
           <div class="profile__info">
-            <button class="edit-button" type="submit">
+            <button class="profile__edit-button" type="button" aria-label="open">
             </button>
             <h1 class="profile__info-title">
               Жак-Ив Кусто
@@ -29,57 +29,57 @@
             </p>
           </div>
         </div>
-        <button class="add-button" type="submit">
+        <button class="profile__add-button" type="button" aria-label="added">
         </button>
       </section>
       <section class="elements">
-        <ul class="travel">
-          <li class="travel__item">
-            <img  class="travel__image" src="./images/elements/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
-            <h2 class="travel__title">
+        <ul class="elements__list">
+          <li class="element">
+            <img  class="element__image" src="./images/elements/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
+            <h2 class="element__title">
               Карачаевск
             </h2>
-            <button class="travel__like-button">
+            <button class="element__like-button" type="button" aria-label="like">
             </button>
           </li>
-          <li class="travel__item">
-            <img  class="travel__image" src="./images/elements/kirill-pershin-1404681-unsplash.jpg" alt="Карачаевск">
-            <h2 class="travel__title">
+          <li class="element">
+            <img  class="element__image" src="./images/elements/kirill-pershin-1404681-unsplash.jpg" alt="Карачаевск">
+            <h2 class="element__title">
               Гора Эльбрус
             </h2>
-            <button class="travel__like-button">
+            <button class="element__like-button" type="button" aria-label="like">
             </button>
           </li>
-          <li class="travel__item">
-            <img  class="travel__image" src="./images/elements/kirill-pershin-1556355-unsplash.jpg" alt="Карачаевск">
-            <h2 class="travel__title">
+          <li class="element">
+            <img  class="element__image" src="./images/elements/kirill-pershin-1556355-unsplash.jpg" alt="Карачаевск">
+            <h2 class="element__title">
               Домбай
             </h2>
-            <button class="travel__like-button">
+            <button class="element__like-button" type="button" aria-label="like">
             </button>
           </li>
-          <li class="travel__item">
-            <img  class="travel__image" src="./images/elements/kirill-pershin-1404681-unsplash.jpg" alt="Карачаевск">
-            <h2 class="travel__title">
+          <li class="element">
+            <img  class="element__image" src="./images/elements/kirill-pershin-1404681-unsplash.jpg" alt="Карачаевск">
+            <h2 class="element__title">
               Гора Эльбрус
             </h2>
-            <button class="travel__like-button">
+            <button class="element__like-button" type="button" aria-label="like">
             </button>
           </li>
-          <li class="travel__item">
-            <img  class="travel__image" src="./images/elements/kirill-pershin-1556355-unsplash.jpg" alt="Карачаевск">
-            <h2 class="travel__title">
+          <li class="element">
+            <img  class="element__image" src="./images/elements/kirill-pershin-1556355-unsplash.jpg" alt="Карачаевск">
+            <h2 class="element__title">
               Домбай
             </h2>
-            <button class="travel__like-button">
+            <button class="element__like-button" type="button" aria-label="like">
             </button>
           </li>
-          <li class="travel__item">
-            <img  class="travel__image" src="./images/elements/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
-            <h2 class="travel__title">
+          <li class="element">
+            <img  class="element__image" src="./images/elements/kirill-pershin-1088404-unsplash.jpg" alt="Карачаевск">
+            <h2 class="element__title">
               Карачаево-Черкесия
             </h2>
-            <button class="travel__like-button">
+            <button class="element__like-button" type="button" aria-label="like">
             </button>
           </li>
         </ul>
@@ -92,18 +92,20 @@
     </footer>
   </div>
   <div class="popup">
-    <form class="popup__container" action="/" method="post" >
-      <fieldset class="popup__form-title">
-        Редактировать профиль
-      </fieldset>
-      <input  class="popup__input-text popup__input-name" value="" placeholder="" type="text">
-      <input  class="popup__input-text popup__input-job" value="" type="text">
-      <button class="popup__save-button" type="submit">
-        Сохранить
+    <div class="popup__container">
+      <form class="popup__form"  method="post" >
+        <h2 class="popup__form-title">
+          Редактировать профиль
+        </h2>
+        <input  class="popup__input-text popup__input_type_name" value="" placeholder="" type="text">
+        <input  class="popup__input-text popup__input_type_job" value="" type="text">
+        <button class="popup__save-button" type="submit" aria-label="save">
+          Сохранить
+        </button>
+      </form>
+      <button class="popup__close-button" type="button" aria-label="closed">
       </button>
-      <button class="popup__close-button" type="submit">
-      </button>
-    </form>
+    </div>
   </div>
   <script src="./scripts/index.js"></script>
 </body>

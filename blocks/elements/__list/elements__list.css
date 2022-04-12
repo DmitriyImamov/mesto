@@ -1,4 +1,4 @@
-.travel {
+.elements__list {
   margin: 0;
   padding: 0;
   display: flex;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 580px) {
-  .travel {
+  .elements__list {
     row-gap: 20px;
   }
 }

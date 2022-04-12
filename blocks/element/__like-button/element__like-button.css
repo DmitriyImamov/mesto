@@ -1,4 +1,4 @@
-.travel__like-button {
+.element__like-button {
   width: 22px;
   height: 19px;
   margin-right: 18px;
@@ -13,6 +13,6 @@
   transition: opacity linear .3s;
 }
 
-.travel__like-button:hover {
+.element__like-button:hover {
   opacity: .5;
 }
