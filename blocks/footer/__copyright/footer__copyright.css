@@ -4,6 +4,12 @@
   color: #545454;
 }
 
+@media screen and (max-width: 919px) {
+  .footer__copyright {
+    margin-left: 19px;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .footer__copyright {
     margin-left: 19px;
