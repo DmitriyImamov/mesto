@@ -2,8 +2,17 @@
   padding-top: 54px;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 650px) {
   .elements {
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 36px;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .elements {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
