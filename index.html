@@ -46,8 +46,8 @@
         <h2 class="popup__form-title">
           Редактировать профиль
         </h2>
-        <input  class="popup__input-text popup__input-text_type_name" value="" placeholder="" type="text">
-        <input  class="popup__input-text popup__input-text_type_job" value="" placeholder="" type="text">
+        <input  class="popup__input-text popup__input-text_type_name" value="" placeholder="" type="text" name="name">
+        <input  class="popup__input-text popup__input-text_type_job" value="" placeholder="" type="text" name="job">
         <button class="popup__save-button" type="submit" aria-label="save">
           Сохранить
         </button>
@@ -63,12 +63,24 @@
         <h2 class="popup__form-title">
           Новое место
         </h2>
-        <input  class="popup__input-text popup__input-text_type_title" value="" placeholder="Название" type="text">
-        <input  class="popup__input-text popup__input-text_type_link" value="" placeholder="Ссылка на картинку" type="text">
+        <input  class="popup__input-text popup__input-text_type_title" value="" placeholder="Название" type="text" name="title">
+        <input  class="popup__input-text popup__input-text_type_link" value="" placeholder="Ссылка на картинку" type="text" name="link">
         <button class="popup__save-button" type="submit" aria-label="save">
           Сохранить
         </button>
       </form>
+      <button class="popup__close-button" type="button" aria-label="closed">
+      </button>
+    </div>
+  </div>
+
+  <div class="popup popup_place_image">
+    <div class="popup__container popup__container_theme_media">
+      <figure class="popup__image-wrapper">
+        <img class="popup__image" src="" alt="">
+        <figcaption class="popup__image-description">
+        </figcaption>
+      </figure>
       <button class="popup__close-button" type="button" aria-label="closed">
       </button>
     </div>
@@ -80,6 +92,8 @@
       <h2 class="element__title">
       </h2>
       <button class="element__like-button" type="button" aria-label="like">
+      </button>
+      <button class="element__remove_button" type="button" aria-lable="remove">
       </button>
     </li>
   </template>
