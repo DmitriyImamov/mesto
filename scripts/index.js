@@ -41,6 +41,8 @@ const elementPopupForm = popupPlaceElement.querySelector('.popup__form');
 const popupPlaceImage = body.querySelector('.popup_place_image');
 const popupImage = popupPlaceImage.querySelector('.popup__image');
 const popupImageDescription = popupPlaceImage.querySelector('.popup__image-description');
+const titleInput = elementPopupForm.querySelector('.popup__input-text_type_title');
+const linkInput = popupPlaceElement.querySelector('.popup__input-text_type_link');
 
 function getElement(item) {
     const elementTemplate = document.querySelector('#element-template').content.cloneNode(true);
@@ -49,10 +51,11 @@ function getElement(item) {
     const removeButton = element.querySelector('.element__remove_button');
     const elementImage = element.querySelector('.element__image');
 
-    element.querySelector('.element__image').src = item.link;
+    elementImage.src = item.link;
+    elementImage.alt = item.name;
     element.querySelector('.element__title').textContent = item.name;
 
-    likeButton.addEventListener('click', toggleLike);
+    likeButton.addEventListener('click', () => { toggleLike(likeButton) });
     removeButton.addEventListener('click', () => { removeElement(element) });
     elementImage.addEventListener('click', () => { openPopupImage(item) });
 
@@ -63,11 +66,12 @@ function openPopupImage(item) {
   popupImage.src = item.link;
   popupImage.setAttribute('alt', item.name);
   popupImageDescription.textContent = item.name;
+
   openPopup(popupPlaceImage);
 }
 
-function toggleLike(event) {
-  event.target.classList.toggle('element__like-button_active');
+function toggleLike(likeButton) {
+  likeButton.classList.toggle('element__like-button_active');
 }
 
 function removeElement(element) {
@@ -82,7 +86,7 @@ function closePopup(modalWindow) {
   modalWindow.classList.remove('popup_opened');
 }
 
-function formSubmitHandler(evt) {
+function handleProfileFormSubmit(evt) {
   evt.preventDefault();
 
   profileInfoTitle.textContent = nameInput.value;
@@ -94,9 +98,7 @@ function formSubmitHandler(evt) {
 function handleAddElement(evt) {
   evt.preventDefault();
 
-  const titleInput = elementPopupForm.querySelector('.popup__input-text_type_title').value;
-  const linkInput = popupPlaceElement.querySelector('.popup__input-text_type_link').value;
-  const element = getElement({name: titleInput, link: linkInput});
+  const element = getElement( {name: titleInput.value, link: linkInput.value} );
 
   elemetList.prepend(element);
   elementPopupForm.reset();
@@ -112,7 +114,7 @@ profileEditButton.addEventListener('click',
     openPopup(popupPlaceProfile);
 });
 
-profilePopupForm.addEventListener('submit', formSubmitHandler);
+profilePopupForm.addEventListener('submit',handleProfileFormSubmit);
 
 profileAddButton.addEventListener('click',
   function() {
