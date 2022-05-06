@@ -2,13 +2,13 @@
   max-width: 358px;
   margin-top: 44px;
   padding: 0;
-  padding: 14px 134px;
+  padding: 13px 133px;
   align-self: center;
   font-size: 18px;
   line-height: 1.2;
   color: #fff;
   background-color: #000;
-  border: none;
+  border: 1px solid #000;
   border-radius: 2px;
   box-sizing: border-box;
   transition: opacity linear .3s;

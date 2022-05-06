@@ -42,12 +42,34 @@
 
   <div class="popup popup_place_profile">
     <div class="popup__container">
-      <form class="popup__form"  method="post" >
+      <form class="popup__form" name="profileForm" method="post" novalidate>
         <h2 class="popup__form-title">
           Редактировать профиль
         </h2>
-        <input  class="popup__input-text popup__input-text_type_name" value="" placeholder="" type="text" name="name">
-        <input  class="popup__input-text popup__input-text_type_job" value="" placeholder="" type="text" name="job">
+        <input id="popup__input-name"
+               class="popup__input-text"
+               name=""
+               value=""
+               placeholder=""
+               type="text"
+               minlength="2"
+               maxlength="40"
+               required
+        >
+        <span class="popup__input-name-error popup__input-error">
+        </span>
+        <input id="popup__input-job"
+               class="popup__input-text"
+               name=""
+               value=""
+               placeholder="" type="text"
+               minlength="2"
+               maxlength="200"
+               required
+        >
+        <span class="popup__input-job-error popup__input-error">
+          Вы пропустили это поле
+        </span>
         <button class="popup__save-button" type="submit" aria-label="save">
           Сохранить
         </button>
@@ -59,13 +81,35 @@
 
   <div class="popup popup_place_element">
     <div class="popup__container">
-      <form class="popup__form"  method="post" >
+      <form class="popup__form" name="elementForm" method="post" novalidate>
         <h2 class="popup__form-title">
           Новое место
         </h2>
-        <input  class="popup__input-text popup__input-text_type_title" value="" placeholder="Название" type="text" name="title">
-        <input  class="popup__input-text popup__input-text_type_link" value="" placeholder="Ссылка на картинку" type="text" name="link">
-        <button class="popup__save-button" type="submit" aria-label="save">
+        <input id="popup__input-title"
+               class="popup__input-text"
+               name="titleInput"
+               value=""
+               placeholder="Название"
+               type="text"
+               minlength="2"
+               maxlength="30"
+               required
+        >
+        <span class="popup__input-title-error popup__input-error">
+          Вы пропустили это поле
+        </span>
+        <input id="popup__input-link"
+               class="popup__input-text"
+               name="linkInput"
+               value=""
+               placeholder="Ссылка на картинку"
+               type="url"
+               required
+        >
+        <span class="popup__input-link-error popup__input-error">
+          Введите адрес сайта
+        </span>
+        <button class="popup__save-button popup__save-button_disabled" type="submit" aria-label="save" disabled>
           Сохранить
         </button>
       </form>
@@ -98,5 +142,6 @@
     </li>
   </template>
   <script src="./scripts/index.js"></script>
+  <script src="./scripts/validate.js"></script>
 </body>
 </html>
