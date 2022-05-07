@@ -1,5 +1,5 @@
 .element {
-  margin: 0 auto;
+  margin: 0;
   position: relative;
   display: grid;
   grid-template-columns: 212px 70px;
