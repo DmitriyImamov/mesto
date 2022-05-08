@@ -63,18 +63,18 @@ const removeElement = (element) => {
 const openPopup = (modalWindow) => {
   modalWindow.classList.add('popup_opened');
 
-  document.addEventListener('keydown', isEscEvent);
+  document.addEventListener('keydown', closeByEscape);
 };
 
 const closePopup = (modalWindow) => {
   modalWindow.classList.remove('popup_opened');
 
-  document.removeEventListener('keydown', isEscEvent);
+  document.removeEventListener('keydown', closeByEscape);
 };
 
-const isEscEvent = (event) => {
-  const openModalWindow = document.querySelector('.popup_opened');
+const closeByEscape = (event) => {
   if (event.key === 'Escape') {
+    const openModalWindow = document.querySelector('.popup_opened');
     closePopup(openModalWindow);
   }
 };
