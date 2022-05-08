@@ -16,7 +16,6 @@ const popupImage = popupPlaceImage.querySelector('.popup__image');
 const popupImageDescription = popupPlaceImage.querySelector('.popup__image-description');
 const titleInput = elementPopupForm.querySelector('#popup__input-title');
 const linkInput = popupPlaceElement.querySelector('#popup__input-link');
-
 const closeButtonPopupProfile = popupPlaceProfile.querySelector('.popup__close-button');
 const closeButtonPopupElement = popupPlaceElement.querySelector('.popup__close-button');
 const closeButtonPopupImage = popupPlaceImage.querySelector('.popup__close-button');
@@ -64,21 +63,20 @@ const removeElement = (element) => {
 const openPopup = (modalWindow) => {
   modalWindow.classList.add('popup_opened');
 
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
-      closePopup(modalWindow);
-    }
-  });
+  document.addEventListener('keydown', isEscEvent);
 };
 
 const closePopup = (modalWindow) => {
   modalWindow.classList.remove('popup_opened');
 
-  document.removeEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
-      closePopup(modalWindow);
-    }
-  });
+  document.removeEventListener('keydown', isEscEvent);
+};
+
+const isEscEvent = (event) => {
+  const openModalWindow = document.querySelector('.popup_opened');
+  if (event.key === 'Escape') {
+    closePopup(openModalWindow);
+  }
 };
 
 const handleProfileFormSubmit = (event) => {
